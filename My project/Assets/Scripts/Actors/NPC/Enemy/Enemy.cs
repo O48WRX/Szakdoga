@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -8,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     public int maxHealth = 100;
     private int currentHealth;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,10 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (anim.GetBool("IsDead"))
+            return;
+
+        Debug.Log("Enemy took " + damage + " damage!");
         currentHealth -= damage;
 
         anim.SetTrigger("Hurt");
@@ -29,10 +35,10 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy died!");
-
         anim.SetBool("IsDead", true);
 
-        //GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+        GetComponent<Enemy>().enabled = false;
+
     }
 }
