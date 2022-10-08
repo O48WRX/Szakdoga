@@ -60,7 +60,10 @@ public class PlayerMovementBehaviour : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground")
+        {
             isGrounded = true;
+            Playerbody.velocity = new Vector2(Playerbody.velocity.x, 0);
+        }
     }
 
     public bool canAttack()
