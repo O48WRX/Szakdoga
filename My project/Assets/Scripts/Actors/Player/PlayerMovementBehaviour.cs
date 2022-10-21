@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameBaseClassLibrary;
 
 public class PlayerMovementBehaviour : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
     private float playerScaleX = 10;
     private float negPlayerScaleX = -10;
     private bool isGrounded;
+    private bool isFalling;
     private float horizontalInput;
 
     private void Awake()
@@ -30,9 +32,12 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
         JumpIfCan();
 
+        PlayerSetFallBoolean();
+
         // Set animator parameters
         anim.SetBool("isRunning", horizontalInput != 0);
         anim.SetBool("isGrounded", isGrounded);
+        anim.SetBool("isFalling", isFalling);
     }
 
     private void FlipPlayerSpriteTransform()
@@ -45,7 +50,7 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
     private void JumpIfCan()
     {
-        if (Input.GetKey(KeyCode.W) && isGrounded)
+        if (Input.GetKey(KeyCode.W) && isGrounded && !isPlayerFalling())
         {
             Jump();
         }
@@ -69,5 +74,23 @@ public class PlayerMovementBehaviour : MonoBehaviour
     public bool canAttack()
     {
         return horizontalInput == 0 && isGrounded;
+    }
+
+    public bool isPlayerFalling()
+    {
+        if (Playerbody.velocity.y < -0.1)
+        {
+            return true;
+        }
+        else { return false; }
+    }
+
+    public void PlayerSetFallBoolean()
+    {
+        if (isPlayerFalling())
+        {
+            isFalling = true;
+        }
+        else { isFalling = false; }
     }
 }

@@ -156,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   player: {fileID: 1063689187}
-  aheadDistance: 1.5
+  aheadDistance: 1.2
   cameraSpeed: 0.5
 --- !u!81 &87517539
 AudioListener:
@@ -810,7 +810,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4723107735738678597, guid: 174209194dbf2fb44aef1ea1ba76a2f1, type: 3}
+  m_Sprite: {fileID: -5966621866309598838, guid: 009d41ed566b98f46a83020862b7e60e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
