@@ -2,13 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using GameBaseClassLibrary.Actor.Abstracts;
 
-public class Enemy : MonoBehaviour
+public class Enemy : EnemyAbstract
 {
-    public Animator anim;
-
-    public int maxHealth = 100;
-    private int currentHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -16,23 +13,7 @@ public class Enemy : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage(int damage)
-    {
-        if (anim.GetBool("IsDead"))
-            return;
-
-        Debug.Log("Enemy took " + damage + " damage!");
-        currentHealth -= damage;
-
-        anim.SetTrigger("Hurt");
-
-        if(currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
-    void Die()
+    public override void Die()
     {
         Debug.Log("Enemy died!");
         anim.SetBool("IsDead", true);
