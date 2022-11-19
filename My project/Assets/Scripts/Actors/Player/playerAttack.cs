@@ -1,35 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using GameBaseClassLibrary.Actor.Abstracts;
+using ActorClassLibrary.Abstracts;
 
-public class playerAttack : MonoBehaviour
+public class playerAttack : PlayerAttackAbstract
 {
-    [SerializeField]private float attackCooldown = 0.6f;
+    private float attackCooldown = 0.6f;
     private Animator anim;
     private PlayerMovementBehaviour playerMovement;
     private float cooldownTimer = Mathf.Infinity;
 
-    public Transform AttackPoint;
-    public float attackRange = 0.5f;
+    internal int maxHealth = 100;
 
-    public LayerMask enemyLayers;
-
-    public int playerAttackDamage = 50;
-
-    private void Awake()
-    {
-        anim = GetComponent<Animator>();
-        playerMovement = GetComponent<PlayerMovementBehaviour>();
-    }
-
-    private void Update()
-    {
-        if (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space) && cooldownTimer > attackCooldown && playerMovement.canAttack())
-            Attack();
-        cooldownTimer += Time.deltaTime;
-    }
-
-    private void Attack()
+    public override void Attack()
     {
         anim.SetTrigger("attack");
         cooldownTimer = 0;
@@ -46,10 +30,31 @@ public class playerAttack : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    public void Start()
     {
-        if (AttackPoint == null)
-            return;
-        Gizmos.DrawWireSphere(AttackPoint.position, attackRange);
+        currentHealth = maxHealth;
+    }
+
+    public void Awake()
+    {
+        anim = GetComponent<Animator>();
+        playerMovement = GetComponent<PlayerMovementBehaviour>();
+    }
+
+    public void Update()
+    {
+        if (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space) && cooldownTimer > attackCooldown && playerMovement.canAttack())
+            Attack();
+        cooldownTimer += Time.deltaTime;
+    }
+
+    public override void Die()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        throw new System.NotImplementedException();
     }
 }
