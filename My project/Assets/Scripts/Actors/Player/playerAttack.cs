@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GameBaseClassLibrary.Actor.Abstracts;
 using ActorClassLibrary.Abstracts;
+using Unity.VisualScripting;
 
 public class playerAttack : PlayerAttackAbstract
 {
@@ -10,6 +11,7 @@ public class playerAttack : PlayerAttackAbstract
     private Animator anim;
     private PlayerMovementBehaviour playerMovement;
     private float cooldownTimer = Mathf.Infinity;
+    private bool dead = false;
 
     internal int maxHealth = 100;
 
@@ -50,11 +52,25 @@ public class playerAttack : PlayerAttackAbstract
 
     public override void Die()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Player died!");
+        anim.SetBool("isDead", true);
+
+        this.enabled = false;
+        GetComponent<PlayerMovementBehaviour>().enabled = false;
+        GetComponent<playerAttack>().enabled = false;
     }
 
     public override void TakeDamage(int damage)
     {
-        throw new System.NotImplementedException();
+        if(dead) return;
+
+        if ((currentHealth - damage) <= 0)
+        {
+            dead = true;
+            Die();
+            return;
+        }
+        currentHealth -= damage;
+        anim.SetTrigger("isHurt");
     }
 }

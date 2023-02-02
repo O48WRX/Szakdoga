@@ -515,7 +515,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1063689187}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034315438
 GameObject:
@@ -703,6 +703,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  Playerbody: {fileID: 0}
+  anim: {fileID: 0}
+  playerScaleX: 10
+  negPlayerScaleX: -10
+  isGrounded: 0
+  horizontalInput: 0
+  isFalling: 0
 --- !u!50 &1063689183
 Rigidbody2D:
   serializedVersion: 4
@@ -762,13 +769,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73bfb940c7f2873429cbd288d617ecb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 0.6
   AttackPoint: {fileID: 395590842}
   attackRange: 2.3
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
   playerAttackDamage: 50
+  currentHealth: 0
 --- !u!212 &1063689186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -810,7 +817,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5966621866309598838, guid: 009d41ed566b98f46a83020862b7e60e, type: 3}
+  m_Sprite: {fileID: -7500690451134026123, guid: d58a7c901ea677743866d81f3a06713e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
