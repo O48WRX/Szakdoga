@@ -1,0 +1,12 @@
+D:\Repositories\StateLibrary\StateLibrary\bin\Debug\net6.0\StateLibrary.deps.json
+D:\Repositories\StateLibrary\StateLibrary\bin\Debug\net6.0\StateLibrary.dll
+D:\Repositories\StateLibrary\StateLibrary\bin\Debug\net6.0\StateLibrary.pdb
+D:\Repositories\StateLibrary\StateLibrary\obj\Debug\net6.0\StateLibrary.csproj.AssemblyReference.cache
+D:\Repositories\StateLibrary\StateLibrary\obj\Debug\net6.0\StateLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositories\StateLibrary\StateLibrary\obj\Debug\net6.0\StateLibrary.AssemblyInfoInputs.cache
+D:\Repositories\StateLibrary\StateLibrary\obj\Debug\net6.0\StateLibrary.AssemblyInfo.cs
+D:\Repositories\StateLibrary\StateLibrary\obj\Debug\net6.0\StateLibrary.csproj.CoreCompileInputs.cache
+D:\Repositories\StateLibrary\StateLibrary\obj\Debug\net6.0\StateLibrary.dll
+D:\Repositories\StateLibrary\StateLibrary\obj\Debug\net6.0\refint\StateLibrary.dll
+D:\Repositories\StateLibrary\StateLibrary\obj\Debug\net6.0\StateLibrary.pdb
+D:\Repositories\StateLibrary\StateLibrary\obj\Debug\net6.0\ref\StateLibrary.dll
