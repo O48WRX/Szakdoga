@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace StateLibrary.ActorState
 {
-    internal interface ActorState
+    public interface ActorState
     {
         string getState();
+        double getDamageTaken();
+        double getDamageGiven();
     }
 }

@@ -29,5 +29,14 @@ namespace StateLibrary.ActorState
 
 		public abstract string getState();
 
+        public double getDamageTaken()
+        {
+			return DamageTakenMult;
+        }
+
+        public double getDamageGiven()
+        {
+			return DamageGivenMult;
+        }
     }
 }
