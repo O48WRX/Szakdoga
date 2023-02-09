@@ -20,6 +20,12 @@ public class playerAttack : PlayerAttackAbstract
 
     internal int maxHealth = 100;
 
+    public bool IsPlayerDead()
+    {
+        bool isDead = dead;
+        return isDead;
+    }
+
     public override void Attack()
     {
         anim.SetTrigger("attack");
