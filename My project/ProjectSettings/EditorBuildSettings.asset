@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Testing/MainMenu.unity
     guid: d5af23a54cc8a104d93e75201110d31e
   - enabled: 1
-    path: Assets/Scenes/GameTestSkyblock.unity
+    path: Assets/Scenes/Testing/GameTestSkyblock.unity
     guid: d636eea08465d244399f73d975cf156c
   m_configObjects: {}

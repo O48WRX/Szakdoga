@@ -43,3 +43,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4177670315
+    locked: 0
+  - name: BackgroundPlatforms
+    uniqueID: 4198389331
+    locked: 0
+  - name: Platforms
+    uniqueID: 1061053137
+    locked: 0
+  - name: Actors&pickups
+    uniqueID: 1748928653
+    locked: 0
