@@ -9,12 +9,16 @@ using StateLibrary.ActorState.PlayerState;
 
 public class playerAttack : PlayerAttackAbstract
 {
-    private float attackCooldown = 0.6f;
+    //References
     private Animator anim;
     private PlayerMovementBehaviour playerMovement;
+    private ActorState state;
+    public HealthBar healthBar;
+
+    // Locals
+    private float attackCooldown = 0.6f;
     private float cooldownTimer = Mathf.Infinity;
     private bool dead = false;
-    private ActorState state;
     private float pickupTimerDelta = 0.0f;
     private float pickupTimerSeconds = 0.0f;
 
@@ -46,6 +50,7 @@ public class playerAttack : PlayerAttackAbstract
     public void Start()
     {
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     public void setState(ActorState state)
@@ -104,6 +109,7 @@ public class playerAttack : PlayerAttackAbstract
             return;
         }
         currentHealth -= damage;
+        healthBar.HealthSet(currentHealth);
         anim.SetTrigger("isHurt");
     }
 }

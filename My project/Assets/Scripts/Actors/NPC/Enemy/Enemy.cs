@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using GameBaseClassLibrary.Actor.Abstracts;
 
 public class Enemy : EnemyAbstract
 {
-
+    [SerializeField]
+    HealthBar NPCHealthBar;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        NPCHealthBar.SetMaxHealth(maxHealth);
     }
 
     public override void Die()
@@ -21,5 +22,11 @@ public class Enemy : EnemyAbstract
         this.enabled = false;
         GetComponent<Enemy>().enabled = false;
 
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage);
+        NPCHealthBar.HealthSet(currentHealth);
     }
 }
