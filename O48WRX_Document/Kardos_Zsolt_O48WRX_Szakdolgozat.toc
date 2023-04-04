@@ -18,5 +18,6 @@
 \select@language {magyar} \contentsline {subsection}{\numberline {2.0.3}Csapatmunka}{20}{subsection.2.0.3}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.0.4}Csapatbeli kommunikáció}{21}{subsection.2.0.4}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.0.5}Feladatok megosztása}{21}{subsection.2.0.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.0.6}Főmenü}{21}{subsection.2.0.6}%
 \select@language {magyar} \contentsline {chapter}{\numberline {3}Tesztelés}{22}{chapter.3}%
 \select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{23}{chapter*.3}%
