@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.27)  4 APR 2023 20:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.27)  4 APR 2023 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -599,7 +599,7 @@ e
 LaTeX Info: Redefining \cal on input line 577.
 LaTeX Info: Redefining \mit on input line 578.
 )
-<eszterhazy-logo-hu.pdf, id=101, 256.07971pt x 88.04292pt>
+<eszterhazy-logo-hu.pdf, id=117, 256.07971pt x 88.04292pt>
 File: eszterhazy-logo-hu.pdf Graphic file (type pdf)
 <use eszterhazy-logo-hu.pdf>
 Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 22.
@@ -628,7 +628,7 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [5
 
 ]
-<quake3.jpg, id=182, 803.0pt x 602.25pt>
+<quake3.jpg, id=202, 803.0pt x 602.25pt>
 File: quake3.jpg Graphic file (type jpg)
 <use quake3.jpg>
 Package pdftex.def Info: quake3.jpg  used on input line 85.
@@ -673,13 +673,13 @@ Overfull \hbox (172.32855pt too wide) in paragraph at lines 133--134
  []
 
 [7]
-<halflife1.jpg, id=227, 740.0448pt x 555.0336pt>
+<halflife1.jpg, id=247, 740.0448pt x 555.0336pt>
 File: halflife1.jpg Graphic file (type jpg)
 <use halflife1.jpg>
 Package pdftex.def Info: halflife1.jpg  used on input line 154.
 (pdftex.def)             Requested size: 227.62204pt x 170.71204pt.
  [8 <./halflife1.jpg>]
-<halflife2.jpg, id=238, 321.2pt x 240.9pt>
+<halflife2.jpg, id=258, 321.2pt x 240.9pt>
 File: halflife2.jpg Graphic file (type jpg)
 <use halflife2.jpg>
 Package pdftex.def Info: halflife2.jpg  used on input line 176.
@@ -692,30 +692,26 @@ LaTeX Warning: Citation `pic-hl2' on page 9 undefined on input line 177.
 LaTeX Warning: Citation `pic-hl2' on page 9 undefined on input line 177.
 
 [9 <./halflife2.jpg>]
-<forgcity1.jpg, id=247, 1954.34366pt x 1099.31831pt>
+<forgcity1.jpg, id=267, 1954.34366pt x 1099.31831pt>
 File: forgcity1.jpg Graphic file (type jpg)
 <use forgcity1.jpg>
 Package pdftex.def Info: forgcity1.jpg  used on input line 217.
 (pdftex.def)             Requested size: 227.62204pt x 128.03766pt.
  [10] [11 <./forgcity1.jpg>]
-<unreal1.jpg, id=264, 1284.8pt x 722.7pt>
+<unreal1.jpg, id=284, 1284.8pt x 722.7pt>
 File: unreal1.jpg Graphic file (type jpg)
 <use unreal1.jpg>
 Package pdftex.def Info: unreal1.jpg  used on input line 262.
 (pdftex.def)             Requested size: 227.62204pt x 128.02927pt.
  [12 <./unreal1.jpg>]
-<unreal2.jpg, id=273, 1284.8pt x 722.7pt>
+<unreal2.jpg, id=293, 1284.8pt x 722.7pt>
 File: unreal2.jpg Graphic file (type jpg)
 <use unreal2.jpg>
 Package pdftex.def Info: unreal2.jpg  used on input line 279.
 (pdftex.def)             Requested size: 227.62204pt x 128.02927pt.
  [13 <./unreal2.jpg>] [14] [15]
 2. fejezet.
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 349.
-
-<shovelknight.jpg, id=294, 1204.5pt x 677.53125pt>
+<shovelknight.jpg, id=315, 1204.5pt x 677.53125pt>
 File: shovelknight.jpg Graphic file (type jpg)
 <use shovelknight.jpg>
 Package pdftex.def Info: shovelknight.jpg  used on input line 355.
@@ -723,99 +719,111 @@ Package pdftex.def Info: shovelknight.jpg  used on input line 355.
 [16
 
  <./shovelknight.jpg>]
-<MainMenu_usecase.png, id=303, 415.5525pt x 615.29875pt>
+<MainMenu_usecase.png, id=323, 415.5525pt x 615.29875pt>
 File: MainMenu_usecase.png Graphic file (type png)
 <use MainMenu_usecase.png>
 Package pdftex.def Info: MainMenu_usecase.png  used on input line 372.
 (pdftex.def)             Requested size: 227.62204pt x 337.03522pt.
-<movementusecase.png, id=304, 299.1175pt x 239.89626pt>
+ [17 <./MainMenu_usecase.png (PNG copy)>]
+<movementusecase.png, id=329, 299.1175pt x 239.89626pt>
 File: movementusecase.png Graphic file (type png)
 <use movementusecase.png>
 Package pdftex.def Info: movementusecase.png  used on input line 393.
 (pdftex.def)             Requested size: 227.62204pt x 182.55731pt.
- [17 <./MainMenu_usecase.png (PNG copy)>]
-<attackchart.png, id=312, 260.975pt x 347.2975pt>
+<attackchart.png, id=332, 260.975pt x 347.2975pt>
 File: attackchart.png Graphic file (type png)
 <use attackchart.png>
 Package pdftex.def Info: attackchart.png  used on input line 410.
 (pdftex.def)             Requested size: 227.62204pt x 302.91478pt.
  [18 <./movementusecase.png (PNG copy)>] [19 <./attackchart.png (PNG copy)>] [2
-0] [21]
+0]
+<mainmenu.png, id=355, 854.19125pt x 401.5pt>
+File: mainmenu.png Graphic file (type png)
+<use mainmenu.png>
+Package pdftex.def Info: mainmenu.png  used on input line 482.
+(pdftex.def)             Requested size: 227.62204pt x 106.98512pt.
+ [21 <./mainmenu.png>]
+<platforms.png, id=366, 1109.14375pt x 516.93124pt>
+File: platforms.png Graphic file (type png)
+<use platforms.png>
+Package pdftex.def Info: platforms.png  used on input line 504.
+(pdftex.def)             Requested size: 227.62204pt x 106.08202pt.
+ [22 <./platforms.png>] [23]
 3. fejezet.
-[22
+[24
 
 ]
-Underfull \hbox (badness 2932) in paragraph at lines 491--492
+Underfull \hbox (badness 2932) in paragraph at lines 540--541
 []\T1/lmr/m/sc/12 Shaw\T1/lmr/m/n/12 :\T1/lmr/m/it/12 The Le-gen-dary Fa-st In-
 ver-se Squ-a-re Ro-ot, https://medium.com/hard-
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 494--495
+Underfull \hbox (badness 1325) in paragraph at lines 543--544
 []\T1/lmr/m/sc/12 Matthew Byrd\T1/lmr/m/n/12 :\T1/lmr/m/it/12 Half-Life: The Fo
 r-got-ten In-no-va-tions of the PC Sho-o-ter,
  []
 
 
-Overfull \hbox (53.89244pt too wide) in paragraph at lines 503--504
+Overfull \hbox (53.89244pt too wide) in paragraph at lines 552--553
 []\T1/lmr/m/sc/12 Valve\T1/lmr/m/n/12 :\T1/lmr/m/it/12 Half-Life (1998) kép, ht
 tps://store.steampowered.com/app/70/HalfLife/?l=hungarian 
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 506--507
+Underfull \hbox (badness 3078) in paragraph at lines 555--556
 []\T1/lmr/m/sc/12 Valve\T1/lmr/m/n/12 :\T1/lmr/m/it/12 Half-Life (1998) kép, ht
 tps://www.giantbomb.com/black-mesa-research-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
 []\T1/lmr/m/sc/12 id Soft-ware\T1/lmr/m/n/12 :\T1/lmr/m/it/12 Quake III Are-na 
 (1999) kép,
  []
 
 
-Overfull \hbox (89.40231pt too wide) in paragraph at lines 512--513
+Overfull \hbox (89.40231pt too wide) in paragraph at lines 561--562
 []\T1/lmr/m/sc/12 Epic Ga-mes, Met-hos\T1/lmr/m/n/12 :\T1/lmr/m/it/12 Unreal (1
 998) kép, https://www.youtube.com/watch?v=WTRmZ6aFEWM 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
+Underfull \hbox (badness 10000) in paragraph at lines 564--565
 []\T1/lmr/m/sc/12 Epic Ga-mes, JS-FILMZ\T1/lmr/m/n/12 :\T1/lmr/m/it/12 Unreal E
 n-gi-ne 5 kép,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--519
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 []\T1/lmr/m/sc/12 TheModernStoryteller\T1/lmr/m/n/12 :\T1/lmr/m/it/12 The For-g
 ot-ten Ci-ty,
  []
 
-[23
+[25
 
 ]
-Overfull \hbox (25.98438pt too wide) in paragraph at lines 527--528
+Overfull \hbox (25.98438pt too wide) in paragraph at lines 576--577
 []\T1/lmr/m/sc/12 Brackeys\T1/lmr/m/n/12 :\T1/lmr/m/it/12 MELEE COM-BAT in Unit
 y, https://www.youtube.com/watch?v=sPiVz1k-
  []
 
-[24] (./Kardos_Zsolt_O48WRX_Szakdolgozat.aux)
+[26] (./Kardos_Zsolt_O48WRX_Szakdolgozat.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Kardos_Zsolt_O48WRX_Szakdolgozat.out' has no
 t changed.
-(rerunfilecheck)             Checksum: 08E1B5F993C1690B43E086C964478A5C;4719.
+(rerunfilecheck)             Checksum: 2676AD978A7B5FD87BDB3E4B2D53FE90;5154.
  ) 
 Here is how much of TeX's memory you used:
- 15798 strings out of 474971
- 250983 string characters out of 5780120
- 815788 words of memory out of 5000000
- 36883 multiletter control sequences out of 15000+600000
+ 15906 strings out of 474971
+ 252350 string characters out of 5780120
+ 815890 words of memory out of 5000000
+ 36972 multiletter control sequences out of 15000+600000
  543543 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,81p,795b,1517s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,81p,874b,1517s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2022/te
 xmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvi
 ps/lm/lm-mathsy.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.en
@@ -828,11 +836,11 @@ s/type1/public/lm/lmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lm
 r8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive
 /2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2022/texmf-dist/f
 onts/type1/public/lm/lmtt12.pfb>
-Output written on Kardos_Zsolt_O48WRX_Szakdolgozat.pdf (24 pages, 1874175 bytes
+Output written on Kardos_Zsolt_O48WRX_Szakdolgozat.pdf (26 pages, 2127635 bytes
 ).
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
- 365 compressed objects within 4 object streams
- 111 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

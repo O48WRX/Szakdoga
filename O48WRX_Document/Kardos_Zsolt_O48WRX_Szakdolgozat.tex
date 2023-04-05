@@ -346,7 +346,7 @@
 	
 	Kiskorom óta szerettem a két dimenziós platformer játékokat, így biztosra tudtam, hogy azt szeretnék csinálni erre a projektre.
 	
-	\subsection{Tervezés}
+	\section{Tervezés}
 	Először inspirációt gyűjtöttem más hasonló játékokból. Ilyen például a \emph{Super Mario}, ami a számítógépes játékokba az egyik bevezető játékom volt, a második pedig a \emph{Shovel Knight} 
 	
 	\begin{figure}[!ht]
@@ -436,7 +436,7 @@
 		\item Felhasználói felület
 	\end{itemize}
 	
-	\subsection{Verziókövetés}
+	\section{Verziókövetés}
 	A Unity projektek számára az ajánlott a \emph{Unity Version Control}, régebbi nevén \emph{Plastic SCM}. Mi azonban, egy különlegesen erre összerakott \emph{gitignore} fájllal ellátott \emph{Git}-et használtunk, projektünket \emph{GitHub}-ra tettük fel, ahol publikusan elérhető \emph{repository}-ban elérhető:
 	\url{https://github.com/O48WRX/Szakdoga}
 	
@@ -446,7 +446,7 @@
 	
 	Tudja segíteni a csapatmunkát azzal is, hogy beépített feladatkövető rendszere is van, mellyel folytonossá és könnyűvé teszi a csoportos munkákat.
 	
-	\subsection{Csapatmunka}
+	\section{Csapatmunka}
 	Programfejlesztők folyamatosan csoportos munkával fognak találkozni a munkahelyen, így nagyon örültem a lehetőségnek, hogy a konzulensem mellett csapatként is dolgozhatok hallgatótársammal ezen a témán.
 	
 	Egyetemen is már többször kellett csoportos munkában részt vennünk, de ebben az esetben ez a téma túlfed egy félévet a súlyával, így teljesen kiteljesedve tudunk dolgozni a témán, érezve a végeredmény komolyságát is.
@@ -457,22 +457,71 @@
 	
 	\pagebreak
 	
-	\subsection{Csapatbeli kommunikáció}
+	\section{Csapatbeli kommunikáció}
 	Mivel csoportos munkánál a kommunikáció kifejezetten fontos szerepet kap, így mi is nagy fókuszt raktunk erre a részére a csapatmunkának.
 	
 	Gyakran téma volt nálunk személyesen is, amikor találkoztunk egyetemen vagy egyéb eseményeknél is, hogy, hogyan kellene továbbfejleszteni a projektünket. A tervezés nagy része viszont, főleg a \emph{Discord} alkalmazáson történt, vagy a \emph{Meta Messenger} alkalmazásán történt.
 	
 	Messengeren a kisebb változásokat beszéltük meg, vagy kisebb betervezett \emph{feature}-öket. A főbb tervezések Discord-on történtek, ott beszéltük meg az eredeti műfaját a játéknak és, hogy milyen funkciókat fog tartalmazni például.
 	
-	\subsection{Feladatok megosztása}
+	\section{Feladatok megosztása}
 	A tervezésünk egyik legfontosabb része volt, mivel arra kellett odafigyelnünk, hogy fair módon osszuk el egymás között a feladatokat. Mivel ketten voltunk egészen könnyen el tudtuk felezni a felelősségeket egymás között.
 	
 	Mivel egészen hamar eldöntöttük, hogy ki melyik részét fogja csinálni a projektnek, én magát a játékot, Henrik pedig a mesterséges intelligenciát és a gépi tanuló algoritmust, így ezzel a részével nem kellett küzdenünk.
 	
 	Viszont a nehézségek a feladatok heti leosztásánál voltak, mivel ebbe külső hatások is belekavartak, mint a családi és egyéb programok és maga az egyetem is. Ezért gondoltam szükségesnek, hogy megemlítem ezt a részét is a fejlesztésnek.
 	
+	\section{Fejlesztés}
+	
 	\subsection{Főmenü}
 	A legelső amit elkészítettem aza főmenü volt. Elemi része a játékoknak a főmenü, hogy el lehessen indítani a játékot, tetszőleges beállításokat végezni a játék működésén vagy működtetésén.
+	
+	\begin{figure}[!ht]
+		\label{kep:mainmenu}
+		\centering
+		\includegraphics[width=8cm]{mainmenu}
+		\caption{A játék főmenüje.}
+	\end{figure}
+	\pagebreak
+	Fő feladat az volt a menünél, hogy ez legyen az első \emph{scene}\footnote{A scenek, az, az jelenetek, a Unity-ben az elkészített pályák technikailag, amik között váltogatni tudunk.} és itt lehessen beállítani a hangerőt, valamint, hogy az indítógombbal az első pályára kerüljünk át. Ezt egy szimpla sor kóddal el lehet érni:
+	
+	\begin{lstlisting}[breaklines=true, caption={A játék Scene léptető kódsora.}, captionpos=b]
+public void playGame()
+{	
+	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+}
+	\end{lstlisting}
+
+	\subsection{Platformok}
+	A főmenü után, első feladatom az volt, hogy előállítsak egy navigálható tesztpályát. Először \emph{platformokat}\footnote{A navigálható felületeket, amivel ütközik a játékos.} kellett létrehoznom. Erre felhasználtam a Unity-be beépített \emph{Square} objectet, melyet transzformálva elértem a szükséges kinézetet. Ezeknek a platformoknak a pozíciója abszolút és nem megváltoztatható a játékos által. A transzformálására, a beépített \emph{Transform} komponenst használtam fel, láthatóságára/színezésére pedig a \emph{Sprite Renderer} komponenst. Itt még fennállt az a probléma, hogy a játékos átesett az objektumon, ezért még a \emph{Box Collider 2D}-t is felhasználtam, ezzel kiküszöböltem a játékos és egyéb \emph{Actor}-ök átesését.
+	
+	A \emph{Box Collider 2D} az egyik legfontosabb eszköz, amit használtam a játék fejlesztése során. Megoldja, hogy a karakterek ne tudjanak átesni a \emph{Collision Box}-án, ami skálázható méretű, valamint a \emph{Material} property-jével megoldható az \emph{Actor}-ök falon való fennakadása. Ez úgy történik, hogy mind a platformok és a játékos és az NPC-k\footnote{Non-Player Character, nem a játékos által irányított karakterek.} is el vannak látva \emph{Collision Box}okkal, skálázva a modellekhez, és a kettő doboz nem tud átesni egymáson.
+	
+	
+	\begin{figure}[!ht]
+		\label{kep:platform}
+		\centering
+		\includegraphics[width=8cm]{platforms}
+		\caption{Az első tesztpályán (TestMap01) lévő platformok}
+	\end{figure}
+
+	\section{Játékos}
+	A játék egyik legfontosabb része, minden bizonnyal, hogy legyen egy játékos által irányítható objektum, amivel játszhatja a játékot. Alapjáraton, egy a platformokhoz hasonlító fekete négyzet volt a játszható karakter.
+	\subsection{Mozgás}
+	A játékos mozgása elemi része az ilyen játékoknak, mivel az élvezhetőségének az egyik alapja.
+	Legelőször a gravitációt kellett implementálni.
+	\subsubsection{Gravitáció}
+	A gravitációt, úgy oldottam meg, hogy a játékos objektumnak adtam, egy \emph{Box Collider 2D}-t, hogy ne essen át a platformokon, ezután felhasználtam a \emph{Rigidbody 2D} komponenst, melyben a ,,Body Type"-ot dinamikusra állítjuk és ez alapjáraton rendelkezik egy ,,Gravity Scale" property, mely alapjáraton ellátja az objektumunkat egy Y tengelyen való mozgással.
+	
+	\subsubsection{Kétirányú mozgás}
+	A kétirányú mozgás, a futás szintén egy alapja, amihez már az X-tengelyen való mozgatás szükséges.
+	
+	Emellett még a modelltranszformáció is egy probléma amit meg kellett oldani. Ez annyit jelent, hogy az adott irányba való mozgásnál, az \emph{Actor}-ök modeljét az adott irányba kell elforgatni.
+	
+	\subsubsection{Ugrás}
+	Az ugrás szintén, mivel platformer játékról beszélünk, alapköve a műfajnak, hogy a nehezebben elérhető, esetlegesen elrejtett részekre is el tudjon érni a játékos.
+	
+	Ezt a mozdulatot már az Y-tengelyen kell végezni, és egy folyamatosan csökkenő sebesség alapján kell számítani. Amikor az adott sebesség pedig eléri a 0-át, akkor pedig a beépített gravitáció vissza fogja húzni az objektumot.
 	
 	\chapter{Tesztelés}
 	

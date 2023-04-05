@@ -13,11 +13,18 @@
 \select@language {magyar} \contentsline {subsection}{\numberline {1.5.3}Unreal Engine}{12}{subsection.1.5.3}%
 \select@language {magyar} \contentsline {subsection}{\numberline {1.5.4}Unity Engine}{13}{subsection.1.5.4}%
 \select@language {magyar} \contentsline {chapter}{\numberline {2}Unity Játékfejlesztés menete és kivitelezése}{16}{chapter.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.0.1}Tervezés}{16}{subsection.2.0.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.0.2}Verziókövetés}{20}{subsection.2.0.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.0.3}Csapatmunka}{20}{subsection.2.0.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.0.4}Csapatbeli kommunikáció}{21}{subsection.2.0.4}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.0.5}Feladatok megosztása}{21}{subsection.2.0.5}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.0.6}Főmenü}{21}{subsection.2.0.6}%
-\select@language {magyar} \contentsline {chapter}{\numberline {3}Tesztelés}{22}{chapter.3}%
-\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{23}{chapter*.3}%
+\select@language {magyar} \contentsline {section}{\numberline {2.1}Tervezés}{16}{section.2.1}%
+\select@language {magyar} \contentsline {section}{\numberline {2.2}Verziókövetés}{20}{section.2.2}%
+\select@language {magyar} \contentsline {section}{\numberline {2.3}Csapatmunka}{20}{section.2.3}%
+\select@language {magyar} \contentsline {section}{\numberline {2.4}Csapatbeli kommunikáció}{21}{section.2.4}%
+\select@language {magyar} \contentsline {section}{\numberline {2.5}Feladatok megosztása}{21}{section.2.5}%
+\select@language {magyar} \contentsline {section}{\numberline {2.6}Fejlesztés}{21}{section.2.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.6.1}Főmenü}{21}{subsection.2.6.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.6.2}Platformok}{22}{subsection.2.6.2}%
+\select@language {magyar} \contentsline {section}{\numberline {2.7}Játékos}{23}{section.2.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.7.1}Mozgás}{23}{subsection.2.7.1}%
+\select@language {magyar} \contentsline {subsubsection}{Gravitáció}{23}{section*.3}%
+\select@language {magyar} \contentsline {subsubsection}{Kétirányú mozgás}{23}{section*.4}%
+\select@language {magyar} \contentsline {subsubsection}{Ugrás}{23}{section*.5}%
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Tesztelés}{24}{chapter.3}%
+\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{25}{chapter*.6}%
