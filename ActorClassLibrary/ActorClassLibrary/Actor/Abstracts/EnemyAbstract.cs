@@ -17,7 +17,7 @@ namespace GameBaseClassLibrary.Actor.Abstracts
 
         public abstract void Die();
 
-        public void TakeDamage(int damage)
+        public virtual void TakeDamage(int damage)
         {
             if (anim.GetBool("IsDead"))
                 return;
